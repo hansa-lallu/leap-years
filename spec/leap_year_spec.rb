@@ -11,5 +11,12 @@ describe LeapYear do
       year = 1700
       expect(subject.leap_year?(year)).to eq(false)
     end
+
+    it 'returns false for all years divisable by 100 but not 400' do 
+      year = 1700
+      expect(subject.leap_year?(year)).to eq(false)
+    end 
   end 
 end 
+
+
