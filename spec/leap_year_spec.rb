@@ -21,6 +21,11 @@ describe LeapYear do
       year = 2004 
       expect(subject.leap_year?(year)).to eq(true)
     end 
+
+    it 'returns false for all years that are not divisable by 4' do
+      year = 2009
+      expect(subject.leap_year?(year)).to eq(false)
+    end
   end 
 end 
 
